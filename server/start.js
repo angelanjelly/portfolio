@@ -8,7 +8,7 @@ var rootPath = path.join(__dirname, '../');
 
 var indexHtmlPath = path.join(rootPath, './browser/index.html')
 
-app.use(express.static(rootPath + '/browser'));
+app.use(express.static(rootPath + '/app'));
 app.use(express.static(rootPath + '/node_modules'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
