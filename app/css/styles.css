@@ -1,7 +1,34 @@
 body {
-  text-align: center; }
+  text-align: center; 
+}
 
 #profile {
   border-radius: 50%;
   max-width: 300px;
-  text-align: center; }
+  text-align: center; 
+}
+
+.col {
+  padding: 7px 7px 7px 7px;
+}
+
+#projects {
+	margin-top: 50px;
+}
+
+.project {
+	border: 1px solid #ccc!important;
+	border-radius: 16px;
+}
+
+#skills {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.skill {
+	border: 1px solid #ccc!important;
+	border-radius: 16px;
+	border-color:red;
+}
+
