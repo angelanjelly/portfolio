@@ -1,34 +1,26 @@
+* {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
+
 body {
-  text-align: center; 
-}
+  text-align: center; }
 
-#profile {
+#first-section {
+  margin-top: 10%; }
+  #first-section div {
+    width: 100%;
+    height: 100%; }
+
+#menu {
+  margin-bottom: 5%; }
+  #menu li {
+    border-style: inline-block;
+    list-style: none; }
+
+#profile-picture {
   border-radius: 50%;
-  max-width: 300px;
-  text-align: center; 
-}
+  max-width: 200px;
+  text-align: center;
+  border-color: #efefef 1px; }
 
-.col {
-  padding: 7px 7px 7px 7px;
-}
-
-#projects {
-	margin-top: 50px;
-}
-
-.project {
-	border: 1px solid #ccc!important;
-	border-radius: 16px;
-}
-
-#skills {
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.skill {
-	border: 1px solid #ccc!important;
-	border-radius: 16px;
-	border-color:red;
-}
-
+#contact ul {
+  list-style: none; }

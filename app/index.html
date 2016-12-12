@@ -1,74 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <base href="/" />
-	<title>Angela M. Choi's Portfolio</title>
+    <title>Angela M. Choi's Portfolio</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Angela's personal portfolio">
     <meta name="author" content="Angela M. Choi">
-
-<!--     <script type="text/javascript" src="/jquery/dist/jquery.js"></script> -->
+    <!--     <script type="text/javascript" src="/jquery/dist/jquery.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
     <script src="/angular/angular.js"></script>
 </head>
+
 <body>
-	<div class="jumbotron text-center">
-        <h1>Angela M. Choi</h1>
-        <p>I'm a software engineer</p>
-    </div>
-    <div class="container">
-        <div class="rows">
-            <img class="col-md-3" id="profile" src="images/profile.jpg">
-            <span class="col-md-3">hellooooo</span>
+    <section id="first-section">
+        <div class="container" id="menu">
+            <span>Home |</span>
+            <span>About |</span>
+            <span>Projects |</span>
+            <span>Contact</span>
         </div>
-    </div>
+        <div class="container" id="profile">
+            <div class="rows">
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img id="profile-picture" src="images/profile.jpg">
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-8">
+                    <h2>A N G E L A / C H O I</h2>
+                    <h5><img src="images/pin_emoji.png" style="width: 20px;"> San Mateo, CA</h4>
+                    <div class="container">
+                        <h3>Skills</h3>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <span>PROFICIENT: Javascript(ES5/ES6), Node.js, PostgreSQL, Sequelize, AngularJS, Express.js, jQuery, HTML5, CSS3, Sass/SCSS, Bootstrap, Git, Gulp, Sequelize, Adobe Photoshop</span>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-6">
+                            <span>KNOWLEDGEABLE: React, Firebase, SQL, Ruby, Jasmine, Mocha, Chai, Webpack, Bootstrap, Material-ui</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="container" id="projects">
-      <div class="row">
-        <div id="first" class="col-xsm-3 col project">
-            <figure>Picture</figure>
-            Poesis
+        <div class="container" id="projects">
+            <h3>Projects</h3>
+            <div class="row">
+                <div id="first" class="col-xs-12 col-sm-3 col-lg-3 project">
+                    <figure>Picture</figure>
+                    <p>Poesis</p>
+                </div>
+                <div id="second" class="col-xs-12 col-sm-3 col-lg-3 project">
+                    <figure>Picture</figure>
+                    <p>yourTurn</p>
+                </div>
+                <div id="third" class="col-xs-12 col-sm-3 col-lg-3 project">
+                    <figure>Picture</figure>
+                    <p>codeFriends</p>
+                </div>
+                <div id="third" class="col-xs-12 col-sm-3 col-lg-3 project">
+                    <figure>Picture</figure>
+                    <p>The Six Senses</p>
+                </div>
+            </div>
         </div>
-        <div id="second" class="col-xsm-3 col project">
-            <figure>Picture</figure>
-          yourTurn
-        </div>
-        <div id="third" class="col-xsm-3 col project">
-            <figure>Picture</figure>
-          codeFriends
-        </div>
-        <div id="third" class="col-xsm-3 col project">
-            <figure>Picture</figure>
-          The Six Senses
-        </div>
-      </div>
-    </div>
-    <div class="container" id="skills">
-      <div class="row">
-        <div class="col-sm-4 col skill">
-            <figure>Picture</figure>
-          One of three columns
-        </div>
-        <div class="col-sm-4 col skill">
-            <figure>Picture</figure>
-          One of three columns
-        </div>
-        <div class="col-sm-4 col skill">
-            <figure>Picture</figure>
-          One of three columns
-        </div>
-      </div>
-    </div>
-
+</section>
     <section id="contact">
-        <h3>Contact</h3>
-        <input type="name" name="name" placeholder="Name" required />
-        <input type="email" name="emailform" placeholder="please write your emial" required />
-        <br>
-        <input type="textarea" rows="5" cols="100" name="textform" placeholder="text" required />
+        <form action="#">
+            <ul>
+                <li>
+                    <h3>Contact</h3>
+                </li>
+                <li>
+                    <label for="name">Name</label>
+                    <p>
+                        <input type="name" name="name" required /><br />
+                    </p>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <p>
+                        <input type="email" name="email" required />
+                    </p>
+                </li>
+                <li>
+                    <label for="textarea">Text</label>
+                    <p>
+                        <textarea cols="46" rows="3" name="comments"></textarea>
+                    </p>
+                </li>
+                <li>
+                <input class="btn btn-default" type="submit" value="SUBMIT" />
+                </li>
+            </ul>
+        </form>
     </section>
     <footer>
         <p>copyright 2016 Angela M. Choi</p>
