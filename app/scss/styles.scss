@@ -1,9 +1,38 @@
+* {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
 body {
 	text-align: center;
 }
 
-#profile {
+#first-section {
+	margin-top: 10%;
+	div {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#menu {
+	margin-bottom: 5%;
+	li {
+		border-style: inline-block;
+		list-style: none;
+	}
+}
+#profile-picture {
 	border-radius: 50%;
-	max-width: 300px;
+	max-width: 200px;
 	text-align: center;
+	border-color: #efefef 1px;
+}
+
+#projects {
+}
+
+#contact {
+	ul {
+		list-style: none;
+	}
 }
