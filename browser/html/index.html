@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Angela's personal portfolio">
     <meta name="author" content="Angela M. Choi">
-        <script type="text/javascript" src="/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Source+Sans+Pro" rel="stylesheet">
@@ -19,10 +19,10 @@
 <body>
     <section class="container" id="first-section">
         <div id="menu">
-            <span><a href="#first-section" target="_self">Home |</a></span>
-            <span><a href="#profile" target="_self">About |</a></span>
-            <span><a href="#projects" target="_self">Projects |</a></span>
-            <span><a href="#contact" target="_self">Contact</a></span>
+            <span><a href="#first-section" class="smoothScroll" target="_self">Home |</a></span>
+            <span><a href="#profile" class="smoothScroll" target="_self">About |</a></span>
+            <span><a href="#projects" class="smoothScroll" target="_self">Projects |</a></span>
+            <span><a href="#contact" class="smoothScroll" target="_self">Contact</a></span>
         </div>
         <div class="row" id="profile">
             <div class="col-lg-6 col-md-6 col-sm-6" id="profile-title">
@@ -117,7 +117,7 @@
         </div>
 </section>
     <section id="contact">
-        <form action="#">
+        <form method="post" action="mailto:angela.minchoi@gmail.com">
             <ul>
                 <li>
                     <h3>Contact</h3>
