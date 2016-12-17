@@ -1,12 +1,12 @@
 * {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
 	text-align: center;
 }
-
-
 
 #first-section {
 	margin-top: 10%;
@@ -29,8 +29,18 @@ body {
 	border-color: #efefef 1px;
 }
 
-#profile-summary {
+#profile-title {
+	font-family: 'Open Sans', sans-serif;
+}
 
+#profile-interesting-fact {
+	font-size: 32px;
+}
+#profile-summary {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: lighter;
 }
 
 #projects {
