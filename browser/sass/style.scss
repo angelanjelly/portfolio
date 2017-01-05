@@ -6,10 +6,12 @@
 
 body {
 	text-align: center;
+	margin-bottom: 100px;
 }
 
 #first-section {
 	margin-top: 10%;
+	margin-bottom: 10%;
 	background-color: #ECEFF1;
 }
 
@@ -43,12 +45,12 @@ body {
 	font-weight: lighter;
 }
 
-#projects {
-	text-align: center;
+#skills {
+	vertical-align: top;
+	padding-top: 30px;
 }
 
-#contact {
-	ul {
-		list-style: none;
-	}
+#projects {
+	text-align: center;
+	padding-top: 30px;
 }
