@@ -9,6 +9,10 @@ body {
 	margin-bottom: 100px;
 }
 
+a:link {
+	color: #ff6868;
+}
+
 #first-section {
 	margin-top: 10%;
 	margin-bottom: 10%;
@@ -18,15 +22,16 @@ body {
 #menu {
 	margin-bottom: 5%;
 	margin-top: 50px;
-	li {
-		border-style: inline-block;
-		list-style: none;
-	}
+	font-size: 30px;
+	appearance: button;
+	list-style: none;
+	border-style: inline-block;
+	font-variant: small-caps;
 }
 
 #profile-picture {
 	border-radius: 50%;
-	max-width: 200px;
+	max-width: 250px;
 	text-align: center;
 	border-color: #efefef 1px;
 }
@@ -38,6 +43,7 @@ body {
 #profile-interesting-fact {
 	font-size: 32px;
 }
+
 #profile-summary {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
@@ -48,6 +54,9 @@ body {
 #skills {
 	vertical-align: top;
 	padding-top: 30px;
+	img:hover {
+		opacity: 0.5;
+	}
 }
 
 #projects {
