@@ -13,26 +13,28 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
-    <script src="/bundle.js"></script>
+    <script src="/bundle.js" defer></script>
 </head>
 
 <body>
     <section class="container" id="first-section">
         <div id="menu">
             <span><a href="images/Angela_M_Choi_Resume.pdf" class="menu smoothScroll" target="_self">Resume</a></span>
-            <span>  -  </span>
+            <span class="menu-between">  |  </span>
             <span><a href="#skills" class="menu smoothScroll" target="_self">Skills</a></span>
-            <span>  -  </span>
+            <span class="menu-between">  |  </span>
             <span><a href="#projects" class="menu smoothScroll" target="_self">Projects</a></span>
-            <span>  -  </span>
-            <span><a href="mailto:angela.minchoi@gmail.com">Contact</a></span>
-            <span>  -  </span>
-            <span><a href="https://github.com/angelanjelly" target="_blank">
-                <img src="images/github_icon.png" alt="Go to Angela's github profile" width="50"> 
+            <span class="menu-between">  |  </span>
+            <span><a href="mailto:angela.minchoi@gmail.com" class="menu">Contact</a></span>
+            <span class="menu-between">  |  </span>
+            <span><a href="https://github.com/angelanjelly" target="_blank" class="menu">
+                <!-- <img src="images/github_icon.png" alt="Go to Angela's github profile" width="50"> --> 
+                Github
             </a></span>
-            <span>  -  </span>
-            <span><a href="https://linkedin.com/in/angelamschoi" target="_blank">
-                <img src="images/linkedin_icon.png" alt="Go to Angela's Linkedin profile" width="50">
+            <span class="menu-between">  |  </span>
+            <span><a href="https://linkedin.com/in/angelamschoi" target="_blank" class="menu">
+                <!-- <img src="images/linkedin_icon.png" alt="Go to Angela's Linkedin profile" width="50"> -->
+                Linkedin
             </a></span>
         </div>
         <div class="row" id="profile">
@@ -43,7 +45,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6" id="profile-summary">
                 <h2>FULL STACK JAVASCRIPT DEVELOPER</h2>
-                <h4>Eager to advance the success of your company</h4><br />
+                <br />
                 <p>When I was 15, I built a fansite(forum) and administrated it for 6 years. It quickly became #1 website in the k-pop group's category with more than 20k regular users and thousands of views each day. 
                 My interest in software engineering and web development continued and eventually led me to <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy</a> in NYC.</p>
                 <p>Now I am a software engineer seeking for great opportunities in the bay area where I can grow as a better problem solver.</p>
@@ -88,41 +90,81 @@
             <div class="container" id="projects">
                 <h3>Projects</h3>
                 <div class="row">
-                    <div id="first" class="col-xs-12 col-sm-3 col-lg-3 project">
-                    <h3>Poesis</h3>
-                        <a href="https://thepoesis.herokuapp.com" target="_blank">
-                            <h4>Deployed</h4>
-                        </a>
-                        <a href="https://github.com/pjm605/poesis" target="_blank">
-                            <img src="images/github_icon.png" width="30"> 
-                        </a>
-                        <p>- Poesis is a browser-based development environment and analytic engine for poetry. It annotates text to make poetically significant verbal features visually accessible<br />
-                        - Built with AngularJS, Node.js, Express.js, CodeMirror API, HTML, CSS/SCSS, and Bootstrap
-                        </p>
+                    <div id="first" class="col-xs-12 col-sm-12 col-lg-12 project">
+                    <ul>
+                        <li>
+                            <h3>Poesis</h3>
+                        </li>
+                        <li>
+                            <a href="https://thepoesis.herokuapp.com" target="_blank">
+                                <h4>Deployed</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pjm605/poesis" target="_blank">
+                                <h4>Github</h4> 
+                            </a>
+                        </li>
+                    </ul>
+                        <br />
+                        <div class="col-xs-12 col-sm-6 col-lg-62">
+                            <img id="myImg" src="images/poesis.png" alt="Poesis example" width="300" height="300">
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <!-- The Close Button -->
+                                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <p><strong>A browser-based development environment and analytic engine for poetry</strong>
+                                <br />- It annotates text to make poetically significant verbal features visually accessible<br />
+                                - Built with AngularJS, Node.js, Express.js, CodeMirror API, HTML, CSS/SCSS, and Bootstrap
+                            </p>
+                        </div>
                     </div>
-                    <div id="second" class="col-xs-12 col-sm-3 col-lg-3 project">
-                        <h3>yourTurn</h3>
-                        <a href="https://github.com/angelanjelly/yourTurn" target="_blank">
-                            <img src="images/github_icon.png" width="30"> 
-                        </a>
-                        <p>- Real-time single webpage app displays waiting queue for gym equipment<br />
-                        - Built with React, Webpack, ES6, Google Material UI, and Firebase for real-time updates</p>
+                    <div id="second" class="col-xs-12 col-sm-4 col-lg-4 project">
+                        <ul>
+                            <li>
+                                <h3>yourTurn</h3>
+                            </li>
+                            <li>
+                                <a href="https://github.com/angelanjelly/yourTurn" target="_blank">
+                                    <h4>Github</h4> 
+                                </a>
+                            </li>
+                        </ul>
+                        <p>- Real-time single webpage app displays waiting queue for gym equipment
+                        <br />- Built with React, Webpack, ES6, Google Material UI, and Firebase for real-time updates</p>
                     </div>
-                    <div id="third" class="col-xs-12 col-sm-3 col-lg-3 project">
-                        <h3>codeFriends</h3>
-                        <a href="https://evening-bayou-19167.herokuapp.com/" target="_blank">
-                            <h4>Deployed</h4>
-                        </a>
-                        <a href="https://github.com/kenzable/codeFriends" target="_blank">
-                            <img src="images/github_icon.png" width="30"> 
-                        </a>
+                    <div id="third" class="col-xs-12 col-sm-4 col-lg-4 project">
+                        <ul>
+                            <li>
+                                <h3>codeFriends</h3>
+                            </li>
+                            <li>
+                                <a href="https://evening-bayou-19167.herokuapp.com/" target="_blank">
+                                    <h4>Deployed</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/kenzable/codeFriends" target="_blank">
+                                    <h4>Github</h4> 
+                                </a>
+                            </li>
                         <p>- E-commerce site built with AngularJS, Node.js, Express.js, PostgreSQL, Sequelize, Mocha/Chai testing, HTML, CSS/SCSS, jQuery, and Stripe API</p>
                     </div>
-                    <div id="third" class="col-xs-12 col-sm-3 col-lg-3 project">
+                    <div id="third" class="col-xs-12 col-sm-4 col-lg-4 project">
                         <h3>The Six Senses</h3>
                         <p>- #1 ranked fan-site in its category on Google, Yahoo, Naver etc. with more than 20k users and 10k views each day.<br />
                         - Built with Javascript, Adobe Photoshop, HTML, CSS, Namo Web Editor, and Zeroboard</p>
                     </div>
+                    <div class="clearfix visible-xs"></div>
                 </div>
             </div>
         </div>
